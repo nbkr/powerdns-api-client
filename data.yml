@@ -1,0 +1,23 @@
+# Example data for the DNS script.
+#
+# Remember: FQDN ends with a dot!
+zones:
+  - name: benjaminfleckenstein.name.
+    records:
+      - name: benjaminfleckenstein.name.
+        type: NS
+        dest:
+          - dns1.example.com.
+          - dns2.example.com.
+
+      - name: benjaminfleckenstein.name.
+        type: A
+        dest: 4.5.6.7
+
+      - name: www.benjaminfleckenstein.name.
+        type: A
+        dest: 1.2.3.4
+
+      - name: benjaminfleckenstein.name.
+        type: MX
+        dest: 10 mailserver.example.com.
